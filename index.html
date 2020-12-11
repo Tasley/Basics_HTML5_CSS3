@@ -1,53 +1,88 @@
-<!-- My first webpage in order to understand the content related to tags, html and css in general. -->
-<!--style=text-align: center - align the text in the center-->
-<!--style=font-size:20px - change de size of the font-->
-
-
-<!DOCTYPE html> <!--Tag to inform browser the type of HTML or file we will render-->
-<html lang="pt-br"> <!--Tag to confirm is a html page and inform browser la language and type of archive-->
+<!DOCTYPE html>
+<html lang="pt-br">
    
-    <head> <!-- Informations of the page to browser-->
-        <meta charset="UTF-8"> <!--Tag to inform the type of character is in use on the file-->
-        <title>Barbearia Alura</title> <!-- Tag was inform on the tab the title of the page-->
-        <link rel="stylesheet" href="style-home.css">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width"> 
+        <title>Barbearia Alura</title> 
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     </head>
     
-    <body> <!-- Content of the site-->
+    <body> 
 
-        <header><!--Page header-->
-            <h1 class="main-title">Barbearia Alura</h1>
+        <header>
+            <div class="box">
+                <h1><img src="img/logo.png" alt="Barbearia"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Produtos</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         
-        <img id="banner" src="IMG/banner.jpg">
+        <img class="banner" src="IMG/banner.jpg">
 
-        <div class="principal"><!--Tag is use to divide the site-->
-        
-            <h2 class="center-title">Sobre a Barbearia Alura</h2> <!-- Tag <h1> is a Header 1, title-->
+        <main>
+
+            <section class="principal">
             
-            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, 
-            a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p> <!--Tag <p> is a Paragraph, to break the line. Tag <strong> gives importance 
-            to the text (usually, bold)-->
-                    
-            <p id="mission"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p> <!--Tag <em> gives emphasis
-                do the text(usually, italic) -->
-                    
-            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, 
-            garantindo qualidade e satisfação dos nossos clientes.</p>
-        
-        </div>
+                <h2 class="main-title">Sobre a Barbearia Alura</h2>
 
-            <h3 class="center-title">Beneficios</h3>
-       
-            <ul><!--unordered list-->
-                <li class="itens">Atendimento aos clientes</li> <!--list iten-->
-                <li class="itens">Espaco diferenciado</li>
-                <li class="itens">Localizacao</li>
-                <li class="itens">Profissionais qualificados</li>
-            </ul>
+                <img class="util" src="img/utensilios.jpg" alt="Utensilios de um barbeiro">
+                
+                <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, 
+                a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p> 
+                        
+                <p id="mission"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p> 
+                        
+                <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, 
+                garantindo qualidade e satisfação dos nossos clientes.</p>
+            
+            </section>
 
-            <img src="IMG/beneficios.jpg" class="imgbenefits">
-        
-        </div>
+            <section class="map">
+                <h3 class="main-title">Nosso estabelecimento</h3>
+                <p>Nosso estabelecimento esta localizado no coração da cidade</p>
+               
+                <div class="map-content">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.448598130836!2d-46.
+                    6346533844751!3d-23.5882393684719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20
+                    Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1607637037412!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" 
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </section>
+
+            <section class="benefits">
+                <h3 class="main-title">Beneficios</h3>
+                
+                <div class="content-benefits">
+                    <ul class="list-benefits">
+                        <li class="itens">Atendimento aos clientes</li> 
+                        <li class="itens">Espaco diferenciado</li>
+                        <li class="itens">Localizacao</li>
+                        <li class="itens">Profissionais qualificados</li>
+                        <li class="itens">Pontualidade</li>
+                        <li class="itens">Limpeza</li>
+                    </ul><img src="IMG/beneficios.jpg" class="img-benefits">
+                </div>
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <img src="img/logo-branco.png">
+            <p class="copyright">&copy Copyright Barbearia Alura - 2019</p>
+        </footer>
     
     </body>
 

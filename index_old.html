@@ -1,0 +1,55 @@
+<!-- My first webpage in order to understand the content related to tags, html and css in general. -->
+<!--style=text-align: center - align the text in the center-->
+<!--style=font-size:20px - change de size of the font-->
+
+
+<!DOCTYPE html> <!--Tag to inform browser the type of HTML or file we will render-->
+<html lang="pt-br"> <!--Tag to confirm is a html page and inform browser la language and type of archive-->
+   
+    <head> <!-- Informations of the page to browser-->
+        <meta charset="UTF-8"> <!--Tag to inform the type of character is in use on the file-->
+        <title>Barbearia Alura</title> <!-- Tag was inform on the tab the title of the page-->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body> <!-- Content of the site-->
+
+        <header><!--Page header-->
+            <h1 class="main-title">Barbearia Alura</h1>
+        </header>
+        
+        <img id="banner" src="IMG/banner.jpg">
+
+        <div class="principal"><!--Tag is use to divide the site-->
+        
+            <h2 class="center-title">Sobre a Barbearia Alura</h2> <!-- Tag <h1> is a Header 1, title-->
+            
+            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, 
+            a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p> <!--Tag <p> is a Paragraph, to break the line. Tag <strong> gives importance 
+            to the text (usually, bold)-->
+                    
+            <p id="mission"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p> <!--Tag <em> gives emphasis
+                do the text(usually, italic) -->
+                    
+            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, 
+            garantindo qualidade e satisfação dos nossos clientes.</p>
+        
+        </div>
+
+            <h3 class="center-title">Beneficios</h3>
+       
+            <ul><!--unordered list-->
+                <li class="itens">Atendimento aos clientes</li> <!--list iten-->
+                <li class="itens">Espaco diferenciado</li>
+                <li class="itens">Localizacao</li>
+                <li class="itens">Profissionais qualificados</li>
+            </ul>
+
+            <img src="IMG/beneficios.jpg" class="imgbenefits">
+        
+        </div>
+    
+    </body>
+
+    </html>
